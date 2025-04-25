@@ -6,16 +6,95 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>EngTalk - Speak with Confidence</title>
-    <link
-      rel="stylesheet"
-      href="style.css"
+    <meta
+      name="description"
+      content="EngTalk - Improve your English speaking skills by talking to real people worldwide. Join a community of learners, share your journey, and speak with confidence!"
     />
+
+    <!-- Open Graph Meta Tags -->
+    <meta
+      property="og:title"
+      content="EngTalk - Learn English by Speaking with Strangers"
+    />
+    <meta
+      property="og:description"
+      content="EngTalk helps you improve your English by connecting you with people around the world for real-time conversations. Start your journey to fluency today!"
+    />
+    <meta
+      property="og:image"
+      content="images/icon.png"
+    />
+    <meta
+      property="og:url"
+      content="https://engtalk.sonetstudio.org/"
+    />
+    <meta
+      property="og:type"
+      content="website"
+    />
+
+    <!-- Twitter Meta Tags -->
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+    <meta
+      name="twitter:title"
+      content="EngTalk - Learn English by Speaking with Strangers"
+    />
+    <meta
+      name="twitter:description"
+      content="EngTalk helps you improve your English by connecting you with people around the world for real-time conversations. Start your journey to fluency today!"
+    />
+    <meta
+      name="twitter:image"
+      content="images/icon.png"
+    />
+    <meta
+      name="twitter:url"
+      content="https://engtalk.sonetstudio.org/"
+    />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      href="images/icon.png"
+      type="image/png"
+    />
+
+    <title>EngTalk - Learn English by Speaking with Strangers</title>
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
+    <!-- Custom Styles -->
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+
+    <!-- Structured Data (Schema Markup) -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "EngTalk",
+        "url": "https://engtalk.sonetstudio.org/",
+        "description": "EngTalk helps you improve your English by connecting you with people around the world for real-time conversations.",
+        "applicationCategory": "Education",
+        "keywords": "English speaking practice, improve English fluency, language learning, speak with strangers",
+        "author": {
+          "@type": "Person",
+          "name": "Sonet Adhikary"
+        },
+        "operatingSystem": "Android, iOS"
+      }
+    </script>
   </head>
+
   <body>
     <section class="welcome">
       <h1>Welcome to EngTalk</h1>
@@ -35,6 +114,8 @@
       </p>
       <button class="downloadBtn">Download Now</button>
     </section>
+
+    <!-- Slide Section -->
     <section class="slide-section">
       <div
         id="slideShow"
@@ -42,59 +123,84 @@
       >
         <div class="slide">
           <img
+            src="images/home.png"
+            alt="Connect with partners to practice English"
+          />
+          <div class="slide-text">
+            Easily connect with partners who match your preferences.
+          </div>
+        </div>
+
+        <div class="slide">
+          <img
             src="images/call.png"
-            alt="Call"
+            alt="Speak with real people to improve English fluency"
           />
           <div class="slide-text">
             Talk with real people in a safe and encouraging environment.
             Practice is key, and we're here for you.
           </div>
         </div>
+
         <div class="slide">
           <img
-            src="images/profile.png"
-            alt="Profile"
+            src="images/inbox.png"
+            alt="Stay connected with language partners"
           />
           <div class="slide-text">
-            Create your profile and share your unique English journey with a
-            supportive global community.
+            Stay connected with your language partners and the community. All
+            your conversations in one place.
           </div>
         </div>
+
         <div class="slide">
           <img
             src="images/leaderboard.png"
-            alt="Leaderboard"
+            alt="Earn trophies and climb the leaderboard"
           />
           <div class="slide-text">
             Earn trophies by talking to others and rise through levels in the
             global leaderboard.
           </div>
         </div>
+
         <div class="slide">
           <img
             src="images/explore.png"
-            alt="Explore"
+            alt="Join a global learning community"
           />
           <div class="slide-text">
             Stay connected with a vibrant global learning community and grow
             together.
           </div>
         </div>
+
+        <div class="slide">
+          <img
+            src="images/profile.png"
+            alt="Create and share your profile"
+          />
+          <div class="slide-text">
+            Create your profile and share your unique English journey with a
+            supportive global community.
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- Features Section -->
     <section class="features">
       <h2>App Features</h2>
       <div class="row justify-content-center">
         <div class="col-md-3 feature-box">
-          <h4>🗣️ Talk to Real People</h4>
-          <p>
+          <h4 class="feature-title">🗣️ Talk to Real People</h4>
+          <p class="feature-text">
             Improve your English by speaking with others in a safe environment.
           </p>
         </div>
         <div class="col-md-3 feature-box">
-          <h4>📢 Share Your Journey</h4>
-          <p>
+          <h4 class="feature-title">📢 Share Your Journey</h4>
+          <p class="feature-text">
             Let the world know about your progress and motivate others along the
             way.
           </p>
@@ -109,6 +215,7 @@
       </div>
     </section>
 
+    <!-- Testimonials Section -->
     <section class="testimonials">
       <h2>User Testimonials</h2>
       <p class="testimonial">
@@ -125,6 +232,7 @@
       </p>
     </section>
 
+    <!-- Contact Section -->
     <section class="contact">
       <h2>Contact Us</h2>
       <p>
@@ -132,8 +240,9 @@
         <a
           href="mailto:sonet.ad101@gmail.com"
           style="color: var(--gray-100); text-decoration: none"
-          >sonet.ad101@gmail.com</a
         >
+          sonet.ad101@gmail.com
+        </a>
       </p>
     </section>
 
