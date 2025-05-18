@@ -93,6 +93,24 @@
         "operatingSystem": "Android, iOS"
       }
     </script>
+
+    <style>
+      .playstore-btn img {
+        height: 70px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .playstore-btn img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      @media (max-width: 576px) {
+        .playstore-btn img {
+          height: 60px;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -101,18 +119,22 @@
       <h2>Speak with Confidence</h2>
       <p>
         Ishita had always dreamed of speaking English fluently, but every time
-        she tried, the words seemed to slip away. She was stuck in her own
-        world, too scared to speak up, afraid of making mistakes. Then, one day,
-        she stumbled upon EngTalk. It was her breakthrough. At first, it felt
-        overwhelming, like she was stepping into unknown territory. But with
-        every conversation, she grew bolder. The fear that once held her back
-        started to fade, replaced by confidence. Ishita pushed through the
-        struggles, and before she knew it, English became a part of her — as
-        natural as breathing. No longer afraid, she stood tall, ready to share
-        her voice with the world. And now, Ishita’s journey continues. Ready to
-        begin your own?
+        she tried, the words seemed to slip away... Ready to begin your own?
       </p>
-      <button class="downloadBtn">Download Now</button>
+
+      <!-- Updated Install Button -->
+      <div class="text-center my-4">
+        <a
+          href="https://play.google.com/store/apps/details?id=com.sonetadhikary.engtalk"
+          target="_blank"
+          class="playstore-btn"
+        >
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
+            alt="Get it on Google Play"
+          />
+        </a>
+      </div>
     </section>
 
     <!-- Slide Section -->
@@ -130,7 +152,6 @@
             Easily connect with partners who match your preferences.
           </div>
         </div>
-
         <div class="slide">
           <img
             src="images/call.png"
@@ -138,21 +159,17 @@
           />
           <div class="slide-text">
             Talk with real people in a safe and encouraging environment.
-            Practice is key, and we're here for you.
           </div>
         </div>
-
         <div class="slide">
           <img
             src="images/inbox.png"
             alt="Stay connected with language partners"
           />
           <div class="slide-text">
-            Stay connected with your language partners and the community. All
-            your conversations in one place.
+            Stay connected with your language partners and the community.
           </div>
         </div>
-
         <div class="slide">
           <img
             src="images/leaderboard.png"
@@ -163,26 +180,22 @@
             global leaderboard.
           </div>
         </div>
-
         <div class="slide">
           <img
             src="images/explore.png"
             alt="Join a global learning community"
           />
           <div class="slide-text">
-            Stay connected with a vibrant global learning community and grow
-            together.
+            Stay connected with a vibrant global learning community.
           </div>
         </div>
-
         <div class="slide">
           <img
             src="images/profile.png"
             alt="Create and share your profile"
           />
           <div class="slide-text">
-            Create your profile and share your unique English journey with a
-            supportive global community.
+            Create your profile and share your unique English journey.
           </div>
         </div>
       </div>
